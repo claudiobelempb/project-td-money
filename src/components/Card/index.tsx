@@ -1,13 +1,20 @@
-import React from 'react';
-import { CardContainer, CardTitle } from './style';
+import { CardContainer, CardTitle, CardValue, CardIcon } from './style';
 
 interface ICardProps {
   bgColor?: string;
+  color?: string;
+  icon?: string;
 }
-export function Card({ bgColor }: ICardProps) {
+export function Card({ bgColor, color, icon }: ICardProps) {
   return (
-    <CardContainer bgColor={bgColor}>
-      <CardTitle>saldo</CardTitle>
+    <CardContainer bgColor={bgColor} color={color}>
+      <CardTitle >
+        Entrada
+        <CardIcon>
+          <img src={icon} />
+        </CardIcon>
+      </CardTitle>
+      <CardValue>R$ 17.400,00</CardValue>
     </CardContainer>
   );
 }
