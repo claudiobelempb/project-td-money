@@ -1,13 +1,13 @@
 import { } from './styles';
 
-import { Header } from '../Header';
+import { Main } from '../Main';
+// import { Header } from '../Header';
 import { Summary } from '../Summary';
 
 export function Dashboard(){
   return (
-   <>
-    <Header />
-    <Summary/>
-   </>
+   <Main>
+      <Summary/>
+   </Main>
   );
 }

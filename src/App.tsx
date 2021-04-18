@@ -5,10 +5,12 @@ import dark from './assets/style/themes/dark';
 
 // import { Header } from './components/Header';
 import { Dashboard } from './components/Dashboard';
+import { Header } from './components/Header';
 
 export function App() {
   return (
     <ThemeProvider theme={dark}>
+      <Header/>
       <Dashboard />
       <GlobalStyle />
     </ThemeProvider>

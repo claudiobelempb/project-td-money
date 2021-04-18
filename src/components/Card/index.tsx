@@ -11,7 +11,7 @@ export function Card({ bgColor, color, icon }: ICardProps) {
       <CardTitle >
         Entrada
         <CardIcon>
-          <img src={icon} />
+          <img src={ icon } alt={'icon'} />
         </CardIcon>
       </CardTitle>
       <CardValue>R$ 17.400,00</CardValue>

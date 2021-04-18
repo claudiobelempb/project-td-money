@@ -1,7 +1,7 @@
 import { Container } from './styles';
 
 import { Card } from '../Card';
-import { CardList } from '../CardList';
+import { Table } from '../Table';
 
 import income from '../../assets/images/income.svg';
 import outcome from '../../assets/images/outcome.svg';
@@ -15,9 +15,7 @@ export function Summary() {
         <Card icon={outcome}/>
         <Card bgColor={'#33CC95'} color={'#FFFFFF'} icon={total}/>
       </ Container>
-      <Container>
-      <CardList />
-      </Container>
+      <Table />
     </> 
   );
 }

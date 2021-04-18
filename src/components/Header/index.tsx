@@ -3,8 +3,7 @@ import {
   Content
 } from './styles';
 
-import logoImg from '../../assets/images/logo.svg';
-
+// import logoImg from '../../assets/images/logo.svg';
 import { Brand } from '../Brand';
 import { Button } from '../Button';
 
